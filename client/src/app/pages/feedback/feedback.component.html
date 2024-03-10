@@ -1,0 +1,9 @@
+<form class="centered form">
+  <h2 class="mb">Feedback</h2>
+  <textarea
+    class="form-control"
+    [ngModel]="feedback()"
+    (ngModelChange)="handleChange($event)"
+    [ngModelOptions]="{ standalone: true }"
+  ></textarea>
+</form>

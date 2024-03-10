@@ -1,0 +1,21 @@
+.hint {
+  color: var(--tg-theme-hint-color);
+}
+
+.products {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.product-item {
+  overflow: hidden;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin-bottom: var(--main-padding);
+  cursor: pointer;
+}
+
+.product-info {
+  padding: var(--main-padding);
+}

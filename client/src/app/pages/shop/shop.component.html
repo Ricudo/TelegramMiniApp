@@ -1,0 +1,7 @@
+@for(type of productType; track type) {
+<app-product-list
+  [title]="type"
+  [subtitle]="type + ' Cats'"
+  [products]="productsByGroup[type]"
+></app-product-list>
+}
