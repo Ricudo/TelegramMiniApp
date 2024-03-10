@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "public": "dist/telegram-mini-app/browser",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
