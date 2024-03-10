@@ -9,7 +9,6 @@ import { TelegramService } from './_services/telegram.service';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  title = 'telegram-mini-app';
   constructor(private _telegram: TelegramService) {
     this._telegram.ready();
   }

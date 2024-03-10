@@ -15,11 +15,11 @@ interface TgButton {
   providedIn: 'root',
 })
 export class TelegramService {
-  private _window: Window & { Telegram: { WebApp: any } };
+  private _window: Window & { Telegram: { WebApp: any } | null };
   tg: any;
   constructor(@Inject(DOCUMENT) private _document: Document) {
     this._window = _document.defaultView as any;
-    this.tg = this._window.Telegram.WebApp;
+    this.tg = this._window.Telegram?.WebApp;
   }
 
   get MainButton(): TgButton {
@@ -31,7 +31,7 @@ export class TelegramService {
   }
 
   ready() {
-    this.tg.ready();
+    this.tg?.ready();
   }
 
   submit(data: object) {
